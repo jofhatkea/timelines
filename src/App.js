@@ -34,22 +34,10 @@ class App extends Component {
     const defaultTracks = [//this is bad, duplicate code
       {name: "git", color: "#bada55"},
       {name: "tools", color: "#c0ffee"},
-      {
-        name: "HTML",
-        color: "#b000b5"
-      },
-      {
-        name: "CSS",
-        color: "#C55"
-      },
-      {
-        name: "SVG",
-        color: "#FB1"
-      },
-      {
-        name: "JS",
-        color: "#707020"
-      }
+      {name: "HTML", color: "#b000b5"},
+      {name: "CSS", color: "#C55"},
+      {name: "SVG", color: "#FB1"},
+      {name: "JS", color: "#707020"}
   ];
   defaultTracks.forEach(track=>{
     let ar=[];
