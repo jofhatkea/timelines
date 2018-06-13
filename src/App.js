@@ -32,14 +32,8 @@ class App extends Component {
       weeks.push(week);
     }
     const defaultTracks = [//this is bad, duplicate code
-      {
-        name: "git",
-        color: "#bada55"
-      },
-      {
-        name: "tools",
-        color: "#c0ffee"
-      },
+      {name: "git", color: "#bada55"},
+      {name: "tools", color: "#c0ffee"},
       {
         name: "HTML",
         color: "#b000b5"
