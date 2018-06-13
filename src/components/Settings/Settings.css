@@ -1,0 +1,15 @@
+.settings {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+}
+.settings .inner {
+    position:relative;
+    top: 20vh;
+    left: 20vw;
+    width: 60vw;
+    height: 60vh;
+    background: white;
+    padding: 1em;
+}

@@ -1,0 +1,7 @@
+.Week {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+}
+.Week>h3 {
+    grid-column: 1 / -1;
+}

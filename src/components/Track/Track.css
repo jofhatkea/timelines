@@ -1,0 +1,4 @@
+.Track {
+    display: grid;
+    grid-template-columns: repeat(60, 100px);
+}

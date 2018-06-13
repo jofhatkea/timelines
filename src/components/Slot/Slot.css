@@ -1,0 +1,7 @@
+.Slot {
+    cursor: move;
+    min-height: 50px;
+}
+.Slot:hover {
+    border: 1px solid #000;
+}
