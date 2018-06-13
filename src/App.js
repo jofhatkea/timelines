@@ -66,7 +66,7 @@ class App extends Component {
       });
     }
     track.slots= ar;
-  })
+  });
     
 
     return {
