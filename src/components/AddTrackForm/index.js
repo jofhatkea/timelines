@@ -1,44 +1,43 @@
-/*jshint esversion: 6*/
 import React, { Component } from 'react';
 import './AddTrackForm.css';
 
 class AddTrackForm extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
-      name: "",
-      color: "#000"
+      name: '',
+      color: '#000',
     };
   }
-  fingerUp(el){
+  fingerUp(el) {
     this.setState({
-      name: el.target.value
+      name: el.target.value,
     });
   }
-  colorPicked(el){
+  colorPicked(el) {
     this.setState({
-      color: el.target.value
+      color: el.target.value,
     });
   }
-  submit(e){
+  submit(e) {
     e.preventDefault();
     const stateCopy = this.state;
-    let ar=[];
-    for(let i=0; i<12*5; i++){
+    const ar = [];
+    for (let i = 0; i < 12 * 5; i += 1) {
       ar.push({
         id: i,
-        value: ''
+        value: '',
       });
     }
-    stateCopy.slots= ar;
-    
+    stateCopy.slots = ar;
+
     this.props.onTrackAdded(this.state);
   }
   render() {
     return (
       <div className="AddTrackForm">
         <h3>Add a new track</h3>
-        <form  onSubmit={el => this.submit(el)} >
+        <form onSubmit={el => this.submit(el)} >
           <label>
             Name:
             <input name="name" type="text" onInput={el => this.fingerUp(el)} />
@@ -47,7 +46,7 @@ class AddTrackForm extends Component {
             Color:
             <input name="color" type="color" onInput={el => this.colorPicked(el)} />
           </label>
-          <input type="submit" value="Add Track"/>
+          <input type="submit" value="Add Track" />
         </form>
       </div>
     );

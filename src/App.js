@@ -1,4 +1,3 @@
-/* jshint esversion: 6 */
 import React, { Component } from 'react';
 import './App.css';
 import Track from './components/Track/';

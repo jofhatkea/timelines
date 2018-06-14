@@ -1,4 +1,3 @@
-/* jshint esversion: 6 */
 import React, { Component } from 'react';
 import './Track.css';
 import Slot from '../Slot/';
